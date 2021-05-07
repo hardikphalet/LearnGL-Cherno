@@ -1,5 +1,5 @@
 # LearnGL-Cherno
-[Logo] https://github.com/hardikphalet/LearnGL-Cherno/img/CELogo.jpg
+[Logo] (hardikphalet.github.com/LearnGL-Cherno/img/CELogo.jpg)
 Learning openGL from Cherno's openGL playlist.
 
 ## Installation
@@ -8,4 +8,4 @@ Run the project.
 
 ## Documentation
 Screenshots:
-[MultiDraw] https://github.com/hardikphalet/LearnGL-Cherno/img/MultiDraw.png
+[MultiDraw] (hardikphalet.github.com/LearnGL-Cherno/img/MultiDraw.png)
