@@ -23,6 +23,7 @@
 #include "imgui/imgui_impl_glfw_gl3.h"
 
 #include "tests/TestClearColor.h"
+#include "tests/TestTexture2D.h"
 
 const unsigned int SCR_WIDTH = 960;
 const unsigned int SCR_HEIGHT = 540;
@@ -113,6 +114,7 @@ int main(void)
         currentTest = testMenu;
 
         testMenu->RegisterTest<test::TestClearColor>("Clear Color");
+        testMenu->RegisterTest<test::TestTexture2D>("2DTexture");
 
         while (!glfwWindowShouldClose(window))
         {
@@ -140,7 +142,11 @@ int main(void)
 
             glfwPollEvents();
         }
+        delete currentTest;
+        if (currentTest != testMenu)
+            delete testMenu;
     }
+
 
     std::cout << "Shutting engine down\n\n";
 
